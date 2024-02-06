@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "noImplicitAny": true,
+    "lib": ["dom", "es6"],
+    "module": "commonjs",
+    "target": "es5",
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "sourceRoot": ".",
+    "sourceMap": true,
+    "baseUrl": ".",
+    "paths": {
+      "src/*": ["src/*"]
+    }
+  },
+  "include": ["src"],
+  "files": ["src/index.ts"],
+  "typeAcquisition": {
+    "include": ["dom"]
+  }
+}

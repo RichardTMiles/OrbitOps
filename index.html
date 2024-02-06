@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>OrbitOps</title>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3Q2S06H2ZL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-3Q2S06H2ZL');
+  </script>
+  <meta name="google-adsense-account" content="ca-pub-7402031087678981">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7402031087678981"
+          crossorigin="anonymous"></script>
+</head>
+<!-- @link https://stackoverflow.com/questions/15829172/stop-chrome-back-forward-two-finger-swipe -->
+<body style="margin: 0; background-color: black; color:#ffffff; overscroll-behavior-x: none; overflow-y: scroll">
+  <canvas id="webgl2" style="width: 100vw; height: 50vh"></canvas>
+
+
+
+  <p> Shading method:</p>
+  <form>
+    <input type="radio" name="shading" id="phong"
+           value="Phong" checked/> Phong shading<br/>
+    <input type="radio" name="shading" id="gouraud"
+           value="Gouraud"/> Gouraud shading<br/>
+    <input type="radio" name="shading" id="flat"
+           value="Flat"/> Flat shading<br/>
+    <input type="radio" name="shading" id="wireframe"
+           value="Wireframe"/> Wireframe mesh
+  </form>
+  <br/>
+  <p>Keypress Options</p>
+  <table>
+    <tbody>
+    <tr>
+      <th>Key</th>
+      <th>Function</th>
+    </tr>
+    <tr>
+      <td>Left Arrow</td>
+      <td>Rotate model left about y axis (fast)</td>
+    </tr>
+    <tr>
+      <td>Right Arrow</td>
+      <td>Rotate model right about y axis (fast)</td>
+    </tr>
+    <tr>
+      <td>Up Arrow</td>
+      <td>Rotate model up about x axis (fast)</td>
+    </tr>
+    <tr>
+      <td>Down Arrow</td>
+      <td>Rotate model down about x axis (fast)</td>
+    </tr>
+    <tr>
+      <td>e</td>
+      <td>Halve (double) shininess exponent</td>
+    </tr>
+    <tr>
+      <td>i</td>
+      <td>Rotate light source down (up) about x axis</td>
+    </tr>
+    <tr>
+      <td>j</td>
+      <td>Rotate light source right (left) about y axis</td>
+    </tr>
+    <tr>
+      <td>p</td>
+      <td>Toggle perspective/orthographic projection</td>
+    </tr>
+    <tr>
+      <td>r</td>
+      <td>Restore defaults</td>
+    </tr>
+    <tr>
+      <td>x</td>
+      <td>Rotate camera up (down) about x axis</td>
+    </tr>
+    <tr>
+      <td>y</td>
+      <td>Rotate camera left (right) about y axis</td>
+    </tr>
+    <tr>
+      <td>z</td>
+      <td>Rotate camera CCW (clockwise) about z axis</td>
+    </tr>
+    <tr>
+      <td>
+        {"<"}
+      </td>
+      <td>Zoom in</td>
+    </tr>
+    <tr>
+      <td>{">"}</td>
+      <td>Zoom out</td>
+    </tr>
+    </tbody>
+  </table>
+  <p>Options in parentheses are selected with the Shift key.</p>
+  <br/>
+  <input type="text" value="Keyboard"/>
+
+</body>
+</html>
